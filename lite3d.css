@@ -149,19 +149,23 @@ a:hover {
     white-space: nowrap;
 }
 
+.top-bar .app-store-badge-link {
+    flex: 0 0 auto;
+}
+
+.top-bar .app-store-badge {
+    height: 32px;
+}
+
 .hero {
     text-align: center;
     margin-bottom: 22px;
 }
 
-.hero-icon-link {
-    display: inline-block;
-    margin-bottom: 14px;
-}
-
 .hero-icon {
     width: 88px;
     height: 88px;
+    margin: 0 auto 14px;
     border-radius: 20px;
     background: url("./macOS512.png") center / cover no-repeat;
     box-shadow:
@@ -253,22 +257,58 @@ a:hover {
 .related-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
+    gap: 12px;
 }
 
-.related-links a {
+.related-text-link {
     display: inline-flex;
     align-items: center;
-    padding: 8px 12px;
+    gap: 10px;
+    height: 40px;
+    padding: 0 14px;
+    box-sizing: border-box;
     border: 1px solid var(--separator);
     border-radius: var(--radius-row);
     background: var(--bg-viewport);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
+    line-height: 1;
     text-decoration: none;
 }
 
-.related-links a:hover {
+.related-link-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    flex: 0 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.related-text-link:hover {
+    border-color: var(--tint-border);
+    text-decoration: none;
+}
+
+.app-store-badge-link {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.app-store-badge-link:hover {
+    text-decoration: none;
+    opacity: 0.88;
+}
+
+.app-store-badge {
+    display: block;
+    width: auto;
+    height: 40px;
+}
+
+.related-links a.related-text-link:hover {
     border-color: var(--tint-border);
     text-decoration: none;
 }
@@ -423,6 +463,10 @@ code {
 
     .top-bar-pill {
         justify-content: center;
+    }
+
+    .top-bar .app-store-badge-link {
+        align-self: center;
     }
 
     .hero-icon {
