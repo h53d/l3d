@@ -211,6 +211,68 @@ a:hover {
     color: var(--tint);
 }
 
+.quick-answer {
+    margin: 0 0 18px;
+    padding: 16px 18px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--tint-border);
+    background: var(--bg-elevated);
+    box-shadow: var(--shadow-elevated);
+}
+
+.quick-answer-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--tint);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.quick-answer p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.faq-item h3 {
+    margin: 0 0 8px;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text-label);
+}
+
+.faq-item p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.related-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid var(--separator);
+    border-radius: var(--radius-row);
+    background: var(--bg-viewport);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.related-links a:hover {
+    border-color: var(--tint-border);
+    text-decoration: none;
+}
+
 .section-group {
     margin-bottom: 18px;
 }
