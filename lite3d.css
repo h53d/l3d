@@ -449,6 +449,16 @@ code {
     font-size: 12px;
 }
 
+.page-footer p {
+    margin: 0;
+}
+
+.page-footer-legal {
+    margin-top: 10px;
+    width: 100%;
+    line-height: 1.45;
+}
+
 @media (max-width: 640px) {
     .page-shell {
         width: min(100%, calc(100% - 20px));

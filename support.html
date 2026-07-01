@@ -127,6 +127,22 @@
                 "mainEntity": [
                     {
                         "@type": "Question",
+                        "name": "What is a JT file?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A JT file (.jt) is an open 3D visualization format widely used to share product and assembly data in engineering and manufacturing workflows. Its structure and data rules are defined by ISO 14306, the international standard for the JT format, which covers product structure, tessellated geometry, and related visualization content."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is the relationship between JT files and Siemens?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The JT format was originally developed by Siemens for lightweight 3D visualization and collaboration. It is now maintained as an open format under ISO 14306 and is widely used with Siemens products such as NX and Teamcenter, as well as by other CAD and PLM tools that publish JT visualization data. Lite3D is an independent viewer and is not affiliated with Siemens."
+                        }
+                    },
+                    {
+                        "@type": "Question",
                         "name": "What is Lite3D: JT File Viewer?",
                         "acceptedAnswer": {
                             "@type": "Answer",
@@ -260,6 +276,16 @@
         <div class="section-group">
             <div class="section-group-title">FAQ</div>
             <div class="group-card" id="faq">
+                <section class="group-item faq-item" aria-labelledby="faq-what-is-jt">
+                    <h3 id="faq-what-is-jt">What is a JT file?</h3>
+                    <p>A JT file (<code>.jt</code>) is an open 3D visualization format widely used to share product and assembly data in engineering and manufacturing workflows. Its structure and data rules are defined by ISO 14306, the international standard for the JT format, which covers product structure, tessellated geometry, and related visualization content.</p>
+                </section>
+
+                <section class="group-item faq-item" aria-labelledby="faq-jt-siemens">
+                    <h3 id="faq-jt-siemens">What is the relationship between JT files and Siemens?</h3>
+                    <p>The JT format was originally developed by Siemens for lightweight 3D visualization and collaboration. It is now maintained as an open format under ISO 14306 and is widely used with Siemens products such as NX and Teamcenter, as well as by other CAD and PLM tools that publish JT visualization data. Lite3D is an independent viewer and is not affiliated with Siemens.</p>
+                </section>
+
                 <section class="group-item faq-item" aria-labelledby="faq-what-is-lite3d">
                     <h3 id="faq-what-is-lite3d">What is Lite3D: JT File Viewer?</h3>
                     <p>Lite3D: JT File Viewer is a native Apple app for opening Siemens JT engineering visualization files on Mac, iPhone, iPad, and Apple Vision. It is a viewer, not a CAD editor.</p>
@@ -329,7 +355,8 @@
         </div>
 
         <footer class="page-footer">
-            &copy; 2025-2026 Lite3D. Built for JT review on Apple platforms.
+            <p>&copy; 2025-2026 Lite3D. Built for JT review on Apple platforms.</p>
+            <p class="page-footer-legal">JT, NX, and Teamcenter are trademarks or registered trademarks of Siemens Product Lifecycle Management Software Inc. or its affiliates. Lite3D is not affiliated with, endorsed by, or sponsored by Siemens.</p>
         </footer>
     </main>
 </body>
